@@ -1,1 +1,1 @@
-./qemu-system-loongarch64 -m 4G -smp 2 --cpu la464 --machine virt  -bios ./QEMU_EFI.fd  -serial stdio   -monitor telnet:localhost:4495,server,nowait -kernel vmlinux-5.18.0+ -initrd ramdisk  -append "root=/dev/ram  rdinit=/sbin/init console=ttyS0,115200" --nographic
+./qemu-system-loongarch64 -m 4G -smp 2 --cpu la464 --machine virt  -bios ./QEMU_EFI.fd  -serial stdio   -monitor telnet:localhost:4495,server,nowait -kernel vmlinuz-6.1.0-rc1+ -initrd ramdisk  -append "root=/dev/ram  rdinit=/sbin/init console=ttyS0,115200" --nographic
